@@ -1,0 +1,3 @@
+Simples codigo para pingar varios IPs de uma vez usando o PythonSimpleGUI.
+Pinga todos os IPs de uma lista em um aquivo txt que fica salvo em 'ip_list.txt' e retorna status 'OK' ou 'SEM CONEXÃO'.
+Fiz isso pois na empresa onde trabalho existem varios RACKs de conexão de rede e ao inves de pingar um por um pelo CMD eu posso apertar um botão e ver se eles estão conectados na rede ou não
