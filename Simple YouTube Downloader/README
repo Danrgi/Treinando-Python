@@ -1,2 +1,3 @@
 Como diz o nome, é um simples codigo para baixar videos do YouTube usando o PyTube e PythonSimpleGUI
+Só colocar a URL do video e clicar em 'Baixar'
 Baixa os videos direto em 'C:\Users\[user]\Downloads',  qualidade maxima de 720p(por algum motivo o PyTube so baixa até essa qualidade)
