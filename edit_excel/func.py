@@ -21,14 +21,14 @@ def dboselect(colum_name=None, row_value=None):
         condition = ''
     try:
         cursor = dbo_connect.cursor()
-        command = f"""SELECT * FROM xlspython {condition}"""
+        command = f"""SELECT f FROM xlspython {condition}"""
         cursor.execute(command)
         rows = []
         for row in cursor.fetchall():
             rows.append(row)
         return rows
     except pyodbc.Error as e:
-        print(e)
+        print(e.args[1])
         return False
 
 
