@@ -21,7 +21,7 @@ def dboselect(colum_name=None, row_value=None):
         condition = ''
     try:
         cursor = dbo_connect.cursor()
-        command = f"""SELECT f FROM xlspython {condition}"""
+        command = f"""SELECT * FROM xlspython {condition}"""
         cursor.execute(command)
         rows = []
         for row in cursor.fetchall():
@@ -39,7 +39,7 @@ def xlsexport(colum_name=None, row_value=None):
     pc_page = book['Computadores']
     pc_page.append(['ID', 'Tipo', 'IP', 'Local', 'Usuário', 'Senha'])
     result = dboselect(colum_name, row_value)
-    if result != False:
+    if result:
         for row in result:
             pc_page.append([row[0], row[1], row[2], row[3], row[4], row[5]])
 
