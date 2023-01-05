@@ -15,7 +15,7 @@ except pyodbc.Error as e:
 
 
 def dboselect(colum_name=None, row_value=None):
-    if colum_name or row_value != None:
+    if colum_name and row_value != None:
         condition = f"WHERE {colum_name}='{row_value}'"
     else:
         condition = ''
